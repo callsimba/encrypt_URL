@@ -14,6 +14,6 @@ def decrypt_url(encrypted_url, key):
 encrypted_url = "PASTE_YOUR_ENCRYPTED_URL_HERE"
 key = bytes.fromhex("PASTE_YOUR_KEY_HERE")
 
-# Decrypt the URL
+
 decrypted_url = decrypt_url(encrypted_url, key)
 print(f"Decrypted URL: {decrypted_url}")

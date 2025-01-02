@@ -9,7 +9,7 @@ def encrypt_url(url, key):
     encrypted_data = cipher.encrypt(pad(url.encode(), AES.block_size))
     return base64.b64encode(iv + encrypted_data).decode()
 
-# Generate a random AES key
+
 key = os.urandom(16)
 print(f"Encryption Key (Save this in your loader!): {key.hex()}")
 
